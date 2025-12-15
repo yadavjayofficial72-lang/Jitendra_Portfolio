@@ -9,20 +9,24 @@ const portfolioData = {
     location: "Chembur-400071, Mumbai, Maharashtra",
   },
   social: [
-    { name: "GitHub", url: "https://github.com/yadavjay", icon: "logo-github" },
+    {
+      name: "GitHub",
+      url: "https://github.com/Jitendra9140?tab=repositories",
+      icon: "logo-github",
+    },
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/jitendra-yadav-b1a5a6206/",
+      url: "https://www.linkedin.com/in/jitendra9140/",
       icon: "logo-linkedin",
     },
     {
       name: "LeetCode",
-      url: "https://leetcode.com/yadavjay/",
+      url: "https://leetcode.com/u/Jitendra9140/",
       icon: "code-slash-outline",
     },
     {
       name: "GeeksForGeeks",
-      url: "https://www.geeksforgeeks.org/user/yadavjay/",
+      url: "https://www.geeksforgeeks.org/profile/yadavjayup72?tab=activity",
       icon: "school-outline",
     },
   ],
