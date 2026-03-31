@@ -26,13 +26,13 @@ function App() {
       const selectItems = document.querySelectorAll('[data-select-item]')
       const selectValue = document.querySelector('[data-select-value]')
       const filterBtn = document.querySelectorAll('[data-filter-btn]')
-      
+
       if (select) {
-        select.addEventListener('click', function () { 
-          elementToggleFunc(this) 
+        select.addEventListener('click', function () {
+          elementToggleFunc(this)
         })
       }
-      
+
       const filterItems = document.querySelectorAll('[data-filter-item]')
       const filterFunc = (selectedValue) => {
         filterItems.forEach((fi) => {
@@ -45,7 +45,7 @@ function App() {
           }
         });
       };
-      
+
       selectItems.forEach((si) => {
         si.addEventListener('click', function () {
           const selectedValue = this.innerText.toLowerCase()
@@ -54,7 +54,7 @@ function App() {
           filterFunc(selectedValue)
         })
       })
-      
+
       let lastClickedBtn = filterBtn[0]
       filterBtn.forEach((btn) => {
         btn.addEventListener('click', function () {
@@ -107,31 +107,31 @@ function App() {
       projectAnchors.forEach((a) => {
         a.addEventListener('click', function (e) {
           e.preventDefault()
-          
+
           const imgEl = this.querySelector('img')
           const titleEl = this.querySelector('.project-title')
           const desc = this.dataset.projectDesc || 'No description available.'
           const tech = this.dataset.projectTech || 'Not specified'
           const gh = this.dataset.projectGithub || ''
           const live = this.dataset.projectLive || ''
-          
+
           if (pmImg && imgEl) {
             pmImg.src = imgEl.src
             pmImg.alt = imgEl.alt || titleEl?.textContent || 'Project'
           }
-          
+
           if (pmTitle && titleEl) {
             pmTitle.textContent = titleEl.textContent
           }
-          
+
           if (pmTech) {
             pmTech.textContent = tech
           }
-          
+
           if (pmDesc) {
             pmDesc.textContent = desc
           }
-          
+
           if (pmGithub) {
             if (gh && gh !== '#' && gh !== '') {
               pmGithub.href = gh
@@ -140,7 +140,7 @@ function App() {
               pmGithub.style.display = 'none'
             }
           }
-          
+
           if (pmLive) {
             if (live && live !== '#' && live !== '') {
               pmLive.href = live
@@ -149,7 +149,7 @@ function App() {
               pmLive.style.display = 'none'
             }
           }
-          
+
           portfolioModalToggle()
         })
       })
@@ -171,12 +171,14 @@ function App() {
   return (
     <main>
       <aside className="sidebar" data-sidebar>
+
         <div className="sidebar-info">
-          <figure className="avatar-box">
+          <figure className="avatar-box rounded-md">
             <img
               src={portfolioData.personal.avatar}
               alt={portfolioData.personal.name}
               width="80"
+              className='rounded-md'
             />
           </figure>
           <div className="info-content">
@@ -338,6 +340,26 @@ function App() {
                   <h4 className="h4 timeline-item-title">{edu.institution}</h4>
                   <span>{edu.period}</span>
                   <p className="timeline-text">{edu.description}</p>
+                </li>
+              ))}
+            </ol>
+          </section>
+
+
+
+          <section className="timeline">
+            <div className="title-wrapper">
+              <div className="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 className="h3">Work Experience</h3>
+            </div>
+            <ol className="timeline-list">
+              {portfolioData.workExperience.map((exp, index) => (
+                <li key={index} className="timeline-item">
+                  <h4 className="h4 timeline-item-title">{exp.company}</h4>
+                  {exp.period && <span>{exp.period}</span>}
+                  <p className="timeline-text">{exp.description}</p>
                 </li>
               ))}
             </ol>

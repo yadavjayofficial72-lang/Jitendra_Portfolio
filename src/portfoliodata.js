@@ -1,8 +1,8 @@
 const portfolioData = {
   personal: {
     name: "Jitendra Yadav",
-    title: "Web Developer",
-    avatar: "/assets/images/my-avatar.png",
+    title: "Full Stack Developer",
+    avatar: "/assets/images/image.jpeg",
     email: "yadavjayofficial72@gmail.com",
     phone: "+91 9137299206",
     birthday: "August 19, 2002",
@@ -107,6 +107,21 @@ const portfolioData = {
       description:
         "Achieved second place in the Swami Vivekanand hackathon for landing page design, demonstrating strong problem-solving skills and innovative thinking.",
     },
+  ],
+  workExperience: [
+    {
+      company: "4Pillars Infotech India",
+      period: "2026 Jan - Present",
+      description:
+        "Contributing to the development of admission portals for MH-CET (Maharashtra Common Entrance Test) and DTE (Directorate of Technical Education) using the MERN stack.",
+    },
+    {
+      company: "ClumpCoder",
+      period: "2025 Nov -2026 Jan",
+      description:
+        "Developed a React Native 'Mathletic' game application, focusing on backend integration with Socket technology for real-time gameplay and contributing to the mobile frontend.",
+    }
+
   ],
   certifications: [
     {
