@@ -32,32 +32,32 @@ const portfolioData = {
   ],
   about: {
     intro: [
-      "I'm a Web developer specializing in modern web technologies like React, Node.js, MongoDB, and Express. I enjoy building responsive and user-friendly web applications and solving complex problems.",
-      "My job is to build websites that are functional, user-friendly, and attractive. I add a personal touch to each project and ensure it's eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way while maintaining high performance and scalability.",
+      "I'm a Full Stack Developer currently contributing to large-scale government admission portals at 4Pillars Infotech India. My expertise lies in building robust and scalable web applications using the MERN stack—MongoDB, Express, React, and Node.js, Python , MySQL.",
+      "With experience ranging from real-time mobile game development with React Native and Socket.io to architecting high-performance frontend systems, I am passionate about solving complex technical challenges and delivering user-centric solutions that perform flawlessly at scale.",
     ],
     services: [
       {
         title: "Web Development",
         description:
-          "Building modern and responsive web applications using React, Node.js, and MongoDB.",
+          "Building modern, responsive, and high-performance web applications using the MERN stack.",
         icon: "/assets/images/icon-design.svg",
+      },
+      {
+        title: "Mobile Development",
+        description:
+          "Developing cross-platform mobile applications using React Native with real-time features like Socket.io.",
+        icon: "/assets/images/icon-app.svg",
       },
       {
         title: "Backend Development",
         description:
-          "Developing robust and scalable backend systems using Node.js, Express, and MongoDB and SQL.",
+          "Developing robust and scalable backend systems using Node.js, Express, MongoDB, and SQL.",
         icon: "/assets/images/icon-dev.svg",
-      },
-      {
-        title: "Data Structures & Algorithms",
-        description:
-          "Solving complex problems and optimizing algorithms for efficient solutions.",
-        icon: "/assets/images/icon-app.svg",
       },
       {
         title: "Freelance Projects",
         description:
-          "Working on freelance projects to deliver high-quality solutions for clients.",
+          "Working on diverse freelance projects to deliver high-quality, custom solutions for clients.",
         icon: "/assets/images/icon-photo.svg",
       },
     ],
